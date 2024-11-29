@@ -1,0 +1,461 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@layer base {
+    :root {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.header_aboutUs {
+    color: white;
+    background-color: lightblue;
+    height: 100px;
+}
+.text_Header {
+    position: relative;
+    top: 20%;
+    font-size: 40px;
+    color: white;
+    left: 20%;
+    font-weight: bolder;
+    max-width: fit-content;
+}
+.first_Part {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+.first_Part p {
+    margin-left: 50px;
+}
+.first_Part a {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.first_Part img {
+    height: 300px;
+    width: 300px;
+}
+
+.first_Part a:hover {
+    color: orange;
+}
+.content_Two {
+    margin-top: 20px;
+}
+.paragraph_Content {
+    max-width: 400px;
+    color: gray;
+}
+.Jessie_Sanders {
+    color: gray;
+    font-size: 30px;
+}
+.second_Part {
+    margin-top: 100px;
+    height: fit-content;
+}
+.second_Part_Content {
+    background-color: #f0f7ff;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.second_Part_Content img {
+    height: 300px;
+    width: 200px;
+}
+
+.second_Part p {
+    color: gray;
+    max-width: 500px;
+}
+.main_Content {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+}
+.content_Wrapper {
+    margin-top: 10px; /* Điều chỉnh giá trị này theo nhu cầu */
+    font-size: 20px;
+    display: flex;
+}
+.content_Wrapper p {
+    font-size: 15px;
+    width: 450px;
+    margin-right: 50px;
+}
+.practice_Manager {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.practice_ManagerFaQ {
+    font-weight: bolder;
+    font-size: 30px;
+    color: gray;
+}
+
+.Third_Part p {
+    margin-left: 100px;
+}
+.Third_Part {
+    margin-top: 100px;
+}
+.Third_Part img {
+    height: 200px;
+    width: 200px;
+}
+
+.fourth_Part p {
+    margin-left: 100px;
+}
+.fourth_Part {
+    margin-top: 100px;
+}
+.fourth_Part img {
+    height: 200px;
+    width: 200px;
+}
+
+.main_Content_Three {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.content_Wrapper_Three {
+    font-size: 20px;
+    display: flex;
+}
+.content_Wrapper_Three p {
+    font-size: 15px;
+    width: 450px;
+    margin-right: 50px;
+}
+
+.main_Content_Fourth {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content_Wrapper_Fourth {
+    font-size: 20px;
+    display: flex;
+}
+.content_Wrapper_Fourth p {
+    font-size: 15px;
+    width: 450px;
+    margin-right: 50px;
+}
+
+.practice_Manager_Fourth {
+    font-weight: bolder;
+    font-size: 30px;
+    color: gray;
+}
+
+.fifth_Part button {
+    background-color: cyan;
+    width: 100px;
+    height: 50px;
+}
+.fifth_Part {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 100px;
+}
+.fifth_Part img {
+    width: 300px;
+    height: 300px;
+    margin-left: 150px;
+}
+
+.sixth_Part_Content {
+    margin-top: 100px;
+    background-color: #f0f7ff;
+    height: 300px;
+}
+.sixth_Part_Content img {
+    height: 130px;
+    width: 200px;
+}
+
+.sixth_Part p {
+    color: gray;
+    max-width: 100%;
+    margin-left: 100px;
+}
+.main_Content_sixth {
+    /* Điều chỉnh khoảng cách này nếu cần */
+    display: flex;
+    margin-top: 100px;
+    margin-left: 600px;
+    width: fit-content;
+}
+
+.content_Wrapper_Sixth {
+    margin-top: 60px; /* Điều chỉnh giá trị này theo nhu cầu */
+    font-size: 20px;
+    display: flex;
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+.our-story-container {
+    display: flex;
+    margin-left: 400px;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 2em;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 1em;
+    color: #4a4a4a;
+}
+
+.quote {
+    border-left: 4px solid #ccc;
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #333;
+    font-style: italic;
+}
+
+.quote a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.quote a:hover {
+    text-decoration: underline;
+}
+
+.answers {
+    margin-top: 20px;
+}
+
+.answers h3 {
+    font-size: 1.1em;
+    color: #4a4a4a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.answers ol {
+    color: #333;
+}
+
+.image-content {
+    margin-left: 20px;
+}
+
+.image-content img {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+.fish-care-container {
+    position: relative;
+    margin-top: 50px;
+    left: 450px;
+    max-width: 1000px;
+
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.content-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.text-content {
+    max-width: 60%;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.text-content a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.text-content a:hover {
+    text-decoration: underline;
+}
+
+.image-content img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.cta-section {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cta-section p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.response {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+.avatar {
+    border-radius: 80%;
+    width: 40px;
+    height: 40px;
+}
+.response {
+    display: flex;
+}
+.response_Name {
+    color: #4a90e2;
+}
+.response_Name:hover {
+    color: orange;
+}
+.first_CommentPart {
+    display: flex;
+}
+.date_Info {
+    float: right;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-item img {
+    width: 400px;
+    height: 400px;
+}
+
+.grid-item {
+    padding: 20px;
+
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+    left: 39%;
+}
+
+.grid-item h1 {
+    margin: 10px 0px;
+    font-size: 50px;
+    color: gray;
+}
+
+.grid-item button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.First_PartServices p {
+    margin-left: 100px;
+}
+.First_PartServices {
+    margin-top: 100px;
+}
+.First_PartServices img {
+    height: 400px;
+    width: 400px;
+}
+.grid-container button {
+    color: orangered;
+    background-color: white;
+    border: 1px solid orangered;
+}
+.grid-container button:hover {
+    background-color: orangered;
+    color: white;
+}
+.grid-container {
+    margin-top: 50px;
+}
+.content_Three {
+    margin-top: 30px;
+}
+.iframe_Video {
+    position: relative;
+    left: 20%;
+    margin: 10px 10px 10px 100px;
+}
+
+.cta-sectionTwo {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 700px;
+    margin: 50px 20px 20px 50px;
+}

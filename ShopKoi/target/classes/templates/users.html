@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý User</title>
+  <link rel="stylesheet" type="text/css" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css}" />
+</head>
+
+<body>
+<div class="container-fluid">
+  <h1>Quản lý User</h1>
+  <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Actions</th> <!-- Thêm cột hành động -->
+    </tr>
+    </thead>
+    <tbody>
+
+    <th:block th:each="user : ${ListUser}">
+      <tr>
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.firstname}"></td>
+        <td th:text="${user.lastname}"></td>
+        <td th:text="${user.email}"></td>
+        <td>
+          <!-- Nút Sửa -->
+          <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn btn-warning">Edit</a>
+
+          <!-- Nút Xóa -->
+          <a th:href="@{/users/delete/{id}(id=${user.id})}" class="btn btn-danger"
+             onclick="return confirm('Có chắc delelete người dùng này không?');">Delete</a>
+        </td>
+      </tr>
+    </th:block>
+
+    </tbody>
+  </table>
+
+  <!-- Nút Add User ở dưới bảng -->
+  <div class="mt-3">
+    <a th:href="@{/users/newuser}" class="btn btn-success">Add User</a>
+  </div>
+</div>
+</body>
+</html>

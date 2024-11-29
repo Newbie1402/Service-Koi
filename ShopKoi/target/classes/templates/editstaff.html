@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Staff</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+</head>
+
+<body>
+<div class="container-fluid">
+    <h1>Edit Staff</h1>
+    <form th:action="@{/staff/updatestaff}" th:object="${staff}" method="post">
+        <!-- Hidden field for staff ID -->
+        <input type="hidden" th:field="*{staffid}"/>
+
+        <!-- Staff Name -->
+        <div class="form-group row">
+            <label for="staffname" class="col-sm-2 col-form-label">Staff Name</label>
+            <div class="col-sm-10">
+                <input type="text" id="staffname" th:field="*{staffname}" class="form-control" placeholder="Staff Name" required/>
+            </div>
+        </div>
+
+        <!-- Staff Phone -->
+        <div class="form-group row">
+            <label for="staffphone" class="col-sm-2 col-form-label">Staff Phone</label>
+            <div class="col-sm-10">
+                <input type="text" id="staffphone" th:field="*{staffphone}" class="form-control" placeholder="Staff Phone" required/>
+            </div>
+        </div>
+
+        <!-- Staff Email -->
+        <div class="form-group row">
+            <label for="staffemail" class="col-sm-2 col-form-label">Staff Email</label>
+            <div class="col-sm-10">
+                <input type="email" id="staffemail" th:field="*{staffemail}" class="form-control" placeholder="Staff Email" required/>
+            </div>
+        </div>
+
+        <!-- Role -->
+        <div class="form-group row">
+            <label for="role" class="col-sm-2 col-form-label">Role</label>
+            <div class="col-sm-10">
+                <input type="text" id="role" th:field="*{role}" class="form-control" placeholder="Role" required/>
+            </div>
+        </div>
+
+        <!-- Staff Schedule -->
+        <div class="form-group row">
+            <label for="staffschedule" class="col-sm-2 col-form-label">Staff Schedule</label>
+            <div class="col-sm-10">
+                <input type="text" id="staffschedule" th:field="*{staffschedule}" class="form-control" placeholder="Staff Schedule" required/>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

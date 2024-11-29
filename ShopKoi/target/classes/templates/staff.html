@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Staff</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+</head>
+
+<body>
+<div class="container-fluid">
+    <h1>Quản lý Staff</h1>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Staff Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Schedule</th>
+            <th>Actions</th> <!-- Thêm cột hành động -->
+        </tr>
+        </thead>
+        <tbody>
+
+        <th:block th:each="staff : ${ListStaff}" >
+            <tr>
+                <td th:text="${staff.staffid}"></td>
+                <td th:text="${staff.staffname}"></td>
+                <td th:text="${staff.staffemail}"></td>
+                <td th:text="${staff.role}"></td>
+                <td th:text="${staff.staffphone}"></td>
+                <td th:text="${staff.staffschdule}"></td>
+                <td>
+                    <!-- Nút Sửa -->
+                    <a th:href="@{/staff/editstaff/{id}(id=${staff.staffid})}" class="btn btn-warning">Edit</a>
+                    <!-- Nút Xóa -->
+                    <a th:href="@{/staff/delete/{id}(id=${staff.staffid})}" class="btn btn-danger"
+                       onclick="return confirm('Có chắc delelete người dùng này không?');">Delete</a>
+                </td>
+            </tr>
+        </th:block>
+
+        </tbody>
+    </table>
+
+    <!-- Nút Add Staff ở dưới bảng -->
+    <div class="mt-3">
+        <a th:href="@{/staff/new}" class="btn btn-success">Add Staff</a>
+    </div>
+</div>
+</body>
+</html>

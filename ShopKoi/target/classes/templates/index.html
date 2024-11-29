@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css}"/>
+</head>
+<body>
+<div class="container-fluid">
+  <p>Welcom to Admin Cpanel</p>
+  <a th:href="@{/users}">Manage User</a>
+  <a th:href="@{/staff}">Manage Staff</a>
+</div>
+</body>
+</html>

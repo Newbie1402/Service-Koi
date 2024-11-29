@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit User</title>
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css}"/>
+</head>
+
+<body>
+<div class="container-fluid">
+    <p>Edit User</p>
+    <form th:action="@{/users/save}" th:object="${user}" method="post">
+        <!-- First Name -->
+        <div class="form-group row">
+            <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" id="firstname" th:field="*{firstname}" class="form-control" placeholder="First Name"/>
+            </div>
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group row">
+            <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+                <input type="text" id="lastname" th:field="*{lastname}" class="form-control" placeholder="Last Name"/>
+            </div>
+        </div>
+
+        <!-- Username -->
+        <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-10">
+                <input type="text" id="username" th:field="*{username}" class="form-control" placeholder="Username"/>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" id="email" th:field="*{email}" class="form-control" placeholder="Email"/>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group row">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" id="password" th:field="*{password}" class="form-control" placeholder="Password"/>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.efficiency-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.chart-container canvas {
+    margin: 20px 0;
+}
